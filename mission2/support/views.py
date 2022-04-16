@@ -2,6 +2,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse, JsonResponse
 from django.views.generic import ListView
+from .models import Faq
 # Create your views here.
 
 
