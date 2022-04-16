@@ -23,3 +23,10 @@ def url_parameter_view(request, username):
     print('url_parameter_view()')
     print(f"request.GET :  {request.GET}")  # Query String
     return HttpResponse(username)
+
+
+def function_view(request):
+    print(f"request.method :{request.method}")
+    print(f"request.GET :{request.GET}")
+    print(f"request.POST :{request.POST}")
+    return render(request, 'view.html')

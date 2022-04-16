@@ -23,4 +23,5 @@ urlpatterns = [
     # <> 타입으로 str, int가 올 수 있다.
     path('url/<str:username>', views.url_parameter_view, name="url_parameter_view"),
     path('', views.index, name="index"),
+    path('fbv/', views.function_view, name="fbv"),
 ]
