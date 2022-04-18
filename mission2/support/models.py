@@ -2,18 +2,17 @@ from django.db import models
 
 # Create your models here.
 
+
 class Faq(models.Model):
     question = models.TextField()
     category = models.CharField(
         max_length=30,
         default='mission',
-        choices=
-
-                                [
-                                    ('python', 'python'),
-                                    ('mission', 'mission'),
-                                    ('django' , 'django')
-                                ]
+        choices=[
+            ('User', 'User'),
+            ('mission', 'mission'),
+            ('etc', 'etc')
+        ]
     )
     answer = models.TextField()
     writer = models.CharField(max_length=50)
